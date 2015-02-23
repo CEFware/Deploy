@@ -58,7 +58,7 @@ Script that handles deploying meteor apps from git repo, creating server for met
  7. PORT Number on which you want the apps to run
     PORT= portno //eg 3000
 
- 8. #If you have an external service, such as Google SMTP, set this
+ 8. If you have an external service, such as Google SMTP, set this
      MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465
 
  #Future:
