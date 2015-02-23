@@ -1,22 +1,22 @@
 #!/bin/sh
 # IP or URL of the server you want to deploy to
-APP_HOST=45.56.126.101
+APP_HOST=host
 
 #USERNAME OF THE SERVER
 ROOT="root"
 
 # If you want a different ROOT_URL, when using a load balancer for instance, set it here
-ROOT_URL='todo.cefware.com'
+ROOT_URL='test.example.com'
 
 # What's your project's Git repo?
-GIT_URL="https://piyushlab:pt363663@gitlab.com/piyushlab/photomaker.git"
+GIT_URL="git repo"
 
 
 #If you have an external service, such as Google SMTP, set this
 #MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465
 
 # What's your app name (must be same as folder of git )?
-APP_NAME="photomaker" # must be same as git folder
+APP_NAME="name of app" # must be same as git folder
 
 # Kill the forever and node processes, and deletes the bundle directory and tar file prior to deploying
 FORCE_CLEAN=true
