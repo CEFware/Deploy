@@ -31,36 +31,36 @@ Script that handles deploying meteor apps from git repo, creating server for met
 
 # Configuration
  There are few variables you need to assign before going to this process
- 1. IP or URL of the server you want to deploy to
+ 1. IP or URL of the server you want to deploy to <br>
    ``` APP_HOST= Your host // this is the address where you want to deploy the meteor apps ```
 
- 2.USERNAME OF THE SERVER you are trying to deploy in
+ 2.USERNAME OF THE SERVER you are trying to deploy in <br>
    ``` ROOT="root" ```
 
- 3. What's your project's Git repo?
-    ``` GIT_URL="address of the git repo"
+ 3. What's your project's Git repo? <br>
+    ``` GIT_URL="address of the git repo" ```
    Note: if you are in private repo and still want to connect git as https then the URL must go like this
 
-   GIT_URL="https://username:password@github.com/path/to/repo"  ```
+    ```  GIT_URL="https://username:password@github.com/path/to/repo"  ```
 
- 4. Name of App:
-   ``` APP_NAME="App name"
+ 4. Name of App: <br>
+   ``` APP_NAME="App name"  ```
     Note: Must be same as git repo name
 
-    ```
 
- 5. URL OF THE APP YOU WANT TO HOST
+
+ 5. URL OF THE APP YOU WANT TO HOST <br>
     ``` ROOT_URL='expample.com' or 'test.example.com' ```
 
     Note: load balancer setup coming soon
 
- 6. Mongodb Url
+ 6. Mongodb Url <br>
    ```  MONGO_URL=url of the mongo db ```
 
- 7. PORT Number on which you want the apps to run
+ 7. PORT Number on which you want the apps to run <br>
      ``` PORT= portno //eg 3000 ```
 
- 8. If you have an external service, such as Google SMTP, set this
+ 8. If you have an external service, such as Google SMTP, set this <br>
     ```  MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465 ```
 
  #Future:
