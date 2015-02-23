@@ -32,34 +32,36 @@ Script that handles deploying meteor apps from git repo, creating server for met
 # Configuration
  There are few variables you need to assign before going to this process
  1. IP or URL of the server you want to deploy to
-   APP_HOST= Your host // this is the address where you want to deploy the meteor apps
+   ``` APP_HOST= Your host // this is the address where you want to deploy the meteor apps ```
 
  2.USERNAME OF THE SERVER you are trying to deploy in
-   ROOT="root"
+   ``` ROOT="root" ```
 
  3. What's your project's Git repo?
-   GIT_URL="address of the git repo"
+    ``` GIT_URL="address of the git repo"
    Note: if you are in private repo and still want to connect git as https then the URL must go like this
 
-   GIT_URL="https://username:password@github.com/path/to/repo"
+   GIT_URL="https://username:password@github.com/path/to/repo"  ```
 
  4. Name of App:
-    APP_NAME="App name"
+   ``` APP_NAME="App name"
     Note: Must be same as git repo name
 
+    ```
+
  5. URL OF THE APP YOU WANT TO HOST
-    ROOT_URL='expample.com' or 'test.example.com'
+    ``` ROOT_URL='expample.com' or 'test.example.com' ```
 
     Note: load balancer setup coming soon
 
  6. Mongodb Url
-    MONGO_URL=url of the mongo db
+   ```  MONGO_URL=url of the mongo db ```
 
  7. PORT Number on which you want the apps to run
-    PORT= portno //eg 3000
+     ``` PORT= portno //eg 3000 ```
 
  8. If you have an external service, such as Google SMTP, set this
-     MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465
+    ```  MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465 ```
 
  #Future:
   1. create dynamic subdomain with custom name. <br>
