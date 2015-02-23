@@ -4,24 +4,24 @@ meteor-deploy.sh
 Script that handles deploying meteor apps from git repo, creating server for meteor , and handle nginx vhost
 
 
-Quick Start
+# Quick Start
 
-1. SETUP SERVER: (if the server is completely fresh)
-    sh meteor-deploy.sh setup server
+1. SETUP SERVER: (if the server is completely fresh) <br>
+    ```sh meteor-deploy.sh setup server ```
 
     Installs node.js, mongodb,nginx, meteor distribution etc
-2. Setup  project: (If you are deploying for the first time)
-   sh meteor-deploy.sh setup project
+2. Setup  project: (If you are deploying for the first time)<br>
+   ```sh meteor-deploy.sh setup project ```
 
    Setup a project by cloning to git repo according to the name of repo in the git.
 
-3. Setup NGINX : (if you are pointing the domain for the first time)
-   sh meteor-deploy.sh setup nginx
+3. Setup NGINX : (if you are pointing the domain for the first time)<br>
+   ``` sh meteor-deploy.sh setup nginx ```
 
    creates virtual Host file and points to the port no we assigned with the domain we provided
 
-4. Deploy
-   sh meteor-deploy.sh deploy
+4. Deploy <br>
+    ``` sh meteor-deploy.sh deploy ```
 
    Pulls latest code from the repo and bundles it and start the app forever.
 
@@ -52,15 +52,15 @@ Quick Start
 
     Note: load balancer setup coming soon
 
-  6. Mongodb Url
-   MONGO_URL=url of the mongo db
+ 6. Mongodb Url
+    MONGO_URL=url of the mongo db
 
-  7. PORT Number on which you want the apps to run
+ 7. PORT Number on which you want the apps to run
     PORT= portno //eg 3000
 
-  8. #If you have an external service, such as Google SMTP, set this
+ 8. #If you have an external service, such as Google SMTP, set this
      MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465
 
-  Future:
-  1. create dynamic subdomain with custom name.
+ #Future:
+  1. create dynamic subdomain with custom name. <br>
   2. Informative help option in the script command
